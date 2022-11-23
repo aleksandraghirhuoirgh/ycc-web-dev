@@ -1,0 +1,29 @@
+@import url('https://');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background: linear-gradient(120deg, #255c29, rgb(38, 64, 133), #255c29);
+    height: 100vh;
+    overflow: hidden;
+}
+.center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#255c29, rgb(27, 27, 141));
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 150px rgba(0, 0, 0, 1);
+}
+.center-card h1 {
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(31, 80, 42);
+
+}
