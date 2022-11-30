@@ -76,7 +76,7 @@
 }
 
 .field input:focus ~ label,
-.field input:focus ~ label {
+.field input:valid ~ label {
     top: -5px;
     color: black;
 }
