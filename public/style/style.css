@@ -1,9 +1,10 @@
 @import url('https://');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -11,6 +12,7 @@ font-family: "Poppins", sans-serif;
     height: 100vh;
     overflow: hidden;
 }
+
 .center-card {
     position: absolute;
     top: 50%;
@@ -21,9 +23,60 @@ font-family: "Poppins", sans-serif;
     border-radius: 10px;
     box-shadow: 10px 10px 150px rgba(0, 0, 0, 1);
 }
+
 .center-card h1 {
     text-align: center;
     padding: 20px 0px;
     border-bottom: 1px solid rgb(31, 80, 42);
 
+}
+
+.center-card .card-body {
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.card-body .field {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 20px;
+
+}
+
+.field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: aliceblue;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #9ee6a3;
+    transition: .5s;
+}
+
+.field input:focus ~ label,
+.field input:focus ~ label {
+    top: -5px;
+    color: black;
 }

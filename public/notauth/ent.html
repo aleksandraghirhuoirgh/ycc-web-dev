@@ -12,16 +12,24 @@
     <div class="container">
         <div class="center-card">
             <h1>Вход</h1>
-            <form action="/ent.html" method="post">
-                <span>Логин</span>
-                <input type="text" placeholder="Введите имя">
-                <br>
-                <span>Пароль</span>
-                <input type="password">
-                <br>
+        
+            <form class="card-body" action="/ent.html" method="post">
+               <div class="field">
+                   <input type="text">
+                   <span></span>
+                   <label>Логин</label>
+               </div>
+               <div class="field">
+                   <input type="password">
+                   <span></span>
+                   <label>Пароль</label>
+               </div>
+               <div class="field">
                 <input type="checkbox">
-                <span>Запомнить меня</span>
-                <br>
+                <span></span>
+                <label>Запомнить меня</label>
+              </div>
+             <a href="/notauth/reg.html">Ссылка на регистрацию</a>
                 <input type="submit" value="Войти">
             </form>
 
