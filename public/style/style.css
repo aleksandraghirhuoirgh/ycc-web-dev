@@ -80,3 +80,30 @@
     top: -5px;
     color: black;
 }
+.form-btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #255c29;
+    border-radius: 25px;
+    color: antiquewhite;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-link {
+    text-align: center;
+    margin: 20px 0;
+    color: #adadad;
+    font-style: normal;
+    font-size: 16px;
+
+}
+.form-link a {
+    color: black;
+    text-decoration: none;
+}
+.form-link a:hover {
+    text-decoration: underline;
+}
